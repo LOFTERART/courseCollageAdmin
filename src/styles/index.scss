@@ -1,0 +1,93 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+
+
+
+
+
+@font-face{
+  font-family:MSSJPP1;
+  src:url('./font/Alibaba-PuHuiTi-Bold.ttf')
+}
+@font-face{
+  font-family:MSSJPP2;
+  src:url('./font/Alibaba-PuHuiTi-Heavy.ttf')
+}
+@font-face{
+  font-family:MSSJPP3;
+  src:url('./font/Alibaba-PuHuiTi-Light.ttf')
+}
+@font-face{
+  font-family:MSSJPP4;
+  src:url('./font/Alibaba-PuHuiTi-Medium.ttf')
+}
+@font-face{
+  font-family:MSSJPP5;
+  src:url('./font/Alibaba-PuHuiTi-Regular.ttf')
+}
+
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family:Circular,PingFang-SC,Hiragino Sans GB, MSSJPP1,MSSJPP2,MSSJPP3,MSSJPP4,MSSJPP5,Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
